@@ -67,3 +67,15 @@ print(myNewList)
 matrix =[[1,2,3],[4,5,6], [7,8,9]]
 first_col=[row [0] for row in matrix]
 print (first_col)
+
+#Dictionaries 
+
+my_stuff= {"key1":123, 'key2': 'value2', 'key3': {'123':[1,2,'grabMe']}}
+print (my_stuff['key3'] ['123'][2].upper())
+#Adding an item in dictionary 
+my_Meals= { 'lunch':'Pizza', 'bfast':'Otmeal'}
+my_Meals['lunch']= 'pasta'
+my_Meals['dinner']= 'Rice'
+print(my_Meals ['lunch'])
+
+print (my_Meals)
