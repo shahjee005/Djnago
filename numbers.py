@@ -23,7 +23,7 @@ print(mystring[::2])# HloWrd
 print(mystring[::5])# HloWrd
 
 
-
+#Slicing 
 mystring ='Hello World'
 # x =mystring.upper() # upper case 
 x=mystring.capitalize()
@@ -33,17 +33,37 @@ print(x)
 A= 'Item one :{x} Item Two : {y}'.format(x='apples', y='oranges')
 print (A)
 
-#Basics
+#lists 
 
+myList= ['a','b','c','d']
+#myList = ['Hellow World',1,2,3,4,5,6,48.35,True, 'ABC',[1,2,3]]
+print(myList)
+#length
+print(len (myList))
+print ('before reassignment:')
+print (myList)
+# Add New Item 
+myList[0]='NEW ITEM'
+print("after reassignment:")
+print(myList)
+#append
+myList.append("new Item")
+print(myList)
+#pop Methord 
+item = myList.pop(1)
+print(myList)
+print(item)
 
+#Reverse 
 
-#Indexing 
+myList.reverse()
+print (myList)
 
-
-#Slicing 
-
-
-#Basic Methords 
-
-
-#Print Formatiing 
+#Sort 
+myNewList= [4,2,3,5,1]
+myNewList.sort()
+print(myNewList)
+#list comprehension 
+matrix =[[1,2,3],[4,5,6], [7,8,9]]
+first_col=[row [0] for row in matrix]
+print (first_col)
