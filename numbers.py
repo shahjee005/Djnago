@@ -79,3 +79,26 @@ my_Meals['dinner']= 'Rice'
 print(my_Meals ['lunch'])
 
 print (my_Meals)
+
+
+# Booleans 
+True 
+False
+# Tuples 
+t=(1,2,3)
+print(t[0])
+myList = ['a',True, 123]
+#print (myList)
+myList[0]='NEW'
+print (myList)
+
+
+#SETS
+
+x= set()
+x.add(1)
+x.add(2)
+x.add(4)
+x.add(.45)
+x.add(2)
+print(x)
