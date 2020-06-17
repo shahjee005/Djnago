@@ -75,13 +75,44 @@ x = Sample ()
 print(type(x))
 # Lets define another class
 
+
+
+###Attributes 
+
 class Dog():
+
+#Class object attribute 
+    Species = "mamal"
     def __init__(self,breed, name):
-       self.breed=breed
-       self.name = name 
-mydog = Dog(breed = 'Lab', name = "Sammy")
-mydog = Dog('Lab',"Sammy")
+        self.breed= breed
+        self.name = name 
+mydog = Dog(breed = 'Lab', name = "Sammy") #OR 
+mydog = Dog('Lab',"Sammy") # Most likely used 
 #otherdog = Dog(breed= "Huskie")
 print(mydog.breed)
 print(mydog.name)
+print(mydog.Species)
 #print(otherdog.breed)
+
+
+### Another example of Class####
+class Circle ():
+    pi =3.14
+    # Circle get instantiated with a radius (default is 1)
+    def __init__(self, radius= 1):
+        self.radius = radius
+    # Method for resetting Radius
+    def area(self):
+        return self.redius* self.radius * Circle.pi 
+    # Method for resetting Radius
+    def setRadius(self,radius):
+        self.radius =radius
+    # Method for getting radius (Same as just calling .radius)
+    def getRadius(self):
+        return self.radius
+
+c = Circle()
+
+c.setRadius(2)
+print ('Radius is: ',c.getRadius())
+print ('Area is: ',c.area())
