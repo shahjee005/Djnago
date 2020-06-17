@@ -57,3 +57,31 @@ print (out)
 out =[num**2 for num in x]
 print (out)
 
+
+print(2+2)
+
+#OOP (Object oriented programming)
+mylist =[1,2,3]
+mylist.append(4)
+print(mylist)
+
+print (type([1,2,3])) # list  
+print (type(()))  # tuple 
+
+####ClASS
+class Sample ():     # (class names are always starts with capital letter)
+    pass
+x = Sample ()
+print(type(x))
+# Lets define another class
+
+class Dog():
+    def __init__(self,breed, name):
+       self.breed=breed
+       self.name = name 
+mydog = Dog(breed = 'Lab', name = "Sammy")
+mydog = Dog('Lab',"Sammy")
+#otherdog = Dog(breed= "Huskie")
+print(mydog.breed)
+print(mydog.name)
+#print(otherdog.breed)
